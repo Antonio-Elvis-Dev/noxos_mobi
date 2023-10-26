@@ -11,6 +11,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 //val navController = findNavController(R.id.telaMain)
-  //  navController
+  //  navController dfd
 
 }
