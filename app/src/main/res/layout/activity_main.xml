@@ -28,20 +28,20 @@
             android:id="@+id/editTextTextPassword2"
             android:textColor="#D1CBCB"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
             app:layout_constraintHorizontal_bias="0.502" android:layout_marginBottom="16dp" android:hint="******"
             android:textColorHint="#E1DADA"/>
     <Button
             android:text="Entrar"
             android:layout_width="240dp"
-            android:layout_height="50dp" android:id="@+id/button2"
+            android:layout_height="50dp" android:id="@+id/buttonLogin"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="180dp"
             android:textSize="20sp"/>
     <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="110dp" app:srcCompat="@drawable/rectangle_5" android:id="@+id/imageView4"
+            android:layout_height="200dp" app:srcCompat="@drawable/logo_transparente" android:id="@+id/imageView4"
 
 
             app:layout_constraintTop_toTopOf="parent"
