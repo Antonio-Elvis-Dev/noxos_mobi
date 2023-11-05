@@ -13,11 +13,11 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:ems="10"
-            android:id="@+id/editTextText2"
+            android:id="@+id/txtEmail"
             android:textColor="#D1CBCB"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+            app:layout_constraintBottom_toTopOf="@+id/txtPassword"
             app:layout_constraintHorizontal_bias="0.497" android:layout_marginBottom="24dp" android:hint="E-mail"
             android:textColorHint="#E1DADA"/>
     <EditText
@@ -25,7 +25,7 @@
             android:layout_height="52dp"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/txtPassword"
             android:textColor="#D1CBCB"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
