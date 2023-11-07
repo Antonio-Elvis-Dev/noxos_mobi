@@ -114,38 +114,38 @@
 
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_home"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/home_buttom"
-            android:background=""
+            android:background="#00FF0000"
             />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_search"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/search_buttom"
 
-            android:background=""
+            android:background="#00FF0000"
 
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_producao"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/clipboard_buttom"
 
-            android:background="" />
+            android:background="#00FF0000" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_pedidos"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/box_search_buttom"
 
-            android:background="" />
+            android:background="#00FF0000" />
     </LinearLayout>
 
 

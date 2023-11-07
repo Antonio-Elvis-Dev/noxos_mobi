@@ -11,7 +11,7 @@ android {
         applicationId = "com.example.noxos_mobi"
         minSdk = 24
         //noinspection EditedTargetSdkVersion
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
