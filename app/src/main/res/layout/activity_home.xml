@@ -16,31 +16,137 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/rounded_dash_home"
+        android:gravity="center"
         android:text="@string/dashboard"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_qtd"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="10dp"
 
+    <LinearLayout
+        android:id="@+id/layoutItens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_home"
 
+        >
+
+        <View
+            android:id="@+id/viewQtdItens1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/rounded_views"
 
 
+            />
 
-        />
+        <View
+            android:id="@+id/viewQtdItens2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/rounded_views"
+
+
+            />
+
+        <View
+            android:id="@+id/viewQtdItens3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_views"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layoutItens">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_views" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_views" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_dash_home"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableBottom="@drawable/home_buttom"
+            android:background=""
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableBottom="@drawable/search_buttom"
+
+            android:background=""
+
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableBottom="@drawable/clipboard_buttom"
+
+            android:background="" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableBottom="@drawable/box_search_buttom"
+
+            android:background="" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

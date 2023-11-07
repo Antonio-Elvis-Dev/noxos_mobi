@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">noxos_mobi</string>
     <string name="dashboard">Dashboard</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="producao">Produção</string>
+    <string name="search">Pesquisa</string>
 </resources>
