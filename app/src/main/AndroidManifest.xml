@@ -25,6 +25,9 @@
             android:name=".view.Home"
             android:exported="false" />
         <activity
+            android:name=".view.Cadastro"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

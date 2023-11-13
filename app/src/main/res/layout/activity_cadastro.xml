@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_main"
+    >
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/txtNome"
+        android:textColor="#D1CBCB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintHorizontal_bias="0.497" android:layout_marginBottom="24dp" android:hint="Nome completo"
+        android:textColorHint="#E1DADA"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="text"
+        android:textColor="#D1CBCB"
+        android:textColorHint="#E1DADA"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPassword"
+        android:textColor="#D1CBCB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/txtConfirmPassword"
+        app:layout_constraintHorizontal_bias="0.502" android:layout_marginBottom="16dp" android:hint="Senha"
+        android:textColorHint="#E1DADA"/>
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtConfirmPassword"
+        android:textColor="#D1CBCB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/buttonCadastro"
+        app:layout_constraintHorizontal_bias="0.502" android:layout_marginBottom="16dp" android:hint="Confirmação da senha"
+        android:textColorHint="#E1DADA"/>
+    <Button
+        android:text="Cadastrar"
+        android:layout_width="240dp"
+        android:layout_height="50dp" android:id="@+id/buttonCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="130dp"
+        android:textSize="20sp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" app:srcCompat="@drawable/logo_transparente" android:id="@+id/imageView4"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2" app:layout_constraintVertical_bias="0.704"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/telaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já tenho uma conta"
+        android:clickable="true"
+        android:onClick="abrirTelaLogin"
+        android:layout_marginTop="16dp"
+        android:textColor="#D1CBCB"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
