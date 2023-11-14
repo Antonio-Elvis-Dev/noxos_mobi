@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.noxos_mobi.databinding.ActivityMainBinding
+import com.example.noxos_mobi.view.Cadastro
 import com.example.noxos_mobi.view.Home
 import com.google.android.material.snackbar.Snackbar
 
@@ -42,6 +43,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.telaCadastro.setOnClickListener {
+            abrirTelaCadastro()
+        }
     }
 
     private fun mensagem(view: View, mensagem:String){
@@ -55,4 +59,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    private fun abrirTelaCadastro() {
+        val intent = Intent(this, Cadastro::class.java)
+        startActivity(intent)
+    }
 }
