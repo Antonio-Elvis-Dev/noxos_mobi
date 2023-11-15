@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
     private fun navegarParaHome(){
         val intent = Intent(this, Home::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun abrirTelaCadastro() {

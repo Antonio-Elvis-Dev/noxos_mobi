@@ -23,21 +23,18 @@ class Cadastro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
 
-        // Inicializa os EditTexts
         txtNome = findViewById(R.id.txtNome)
         txtEmail = findViewById(R.id.txtEmail)
         txtPassword = findViewById(R.id.txtPassword)
         txtConfirmPassword = findViewById(R.id.txtConfirmPassword)
 
-        // Configura o ouvinte de clique para o botão de cadastro
         val buttonCadastro: Button = findViewById(R.id.buttonCadastro)
         buttonCadastro.setOnClickListener {
             validarCampos(it)
         }
     }
 
-    // Método para validar os campos
-    // Método para validar os campos
+
     private fun validarCampos(view: View) {
         val nome = txtNome.text.toString()
         val email = txtEmail.text.toString()
