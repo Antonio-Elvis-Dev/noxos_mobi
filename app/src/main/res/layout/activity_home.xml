@@ -118,6 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/home_buttom"
+            android:onClick="abrirTelaHome"
             android:background="#00FFFFFF"
             />
 
@@ -126,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/search_buttom"
-
+            android:onClick="abrirTelaPesquisa"
             android:background="#00FFFFFF"
 
             />
@@ -136,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/clipboard_buttom"
-
+            android:onClick="abrirTelaProducao"
             android:background="#00FFFFFF" />
 
         <Button
@@ -144,7 +145,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:drawableBottom="@drawable/box_search_buttom"
-
+            android:onClick="abrirTelaPedidos"
             android:background="#00FFFFFF" />
     </LinearLayout>
 
