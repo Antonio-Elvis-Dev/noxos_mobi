@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.noxos_mobi.databinding.ActivityMainBinding
 import com.example.noxos_mobi.view.Cadastro
-import com.example.noxos_mobi.view.Home
+import com.example.noxos_mobi.view.Main
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         snackbar.show()
     }
     private fun navegarParaHome(){
-        val intent = Intent(this, Home::class.java)
+        val intent = Intent(this, Main::class.java)
         startActivity(intent)
         finish()
     }
