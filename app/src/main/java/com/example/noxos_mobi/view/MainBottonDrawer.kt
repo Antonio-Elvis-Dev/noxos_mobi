@@ -10,7 +10,7 @@ import com.example.noxos_mobi.fragments.Pedido
 import com.example.noxos_mobi.fragments.Producao
 import com.example.noxos_mobi.fragments.Search
 
-class Main : AppCompatActivity() {
+class MainBottonDrawer : AppCompatActivity() {
     private lateinit var binding: ActivityMainNavBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

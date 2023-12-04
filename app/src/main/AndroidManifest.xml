@@ -27,10 +27,10 @@
             android:name=".view.Search"
             android:exported="false" />
         <activity
-            android:name=".view.Main"
+            android:name=".view.MainBottonDrawer"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
