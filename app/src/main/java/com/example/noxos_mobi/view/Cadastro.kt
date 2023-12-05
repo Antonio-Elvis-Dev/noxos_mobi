@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.noxos_mobi.R
 import com.example.noxos_mobi.databinding.ActivityCadastroBinding
+import com.example.noxos_mobi.model.CadastroModel
 import com.example.noxos_mobi.viewModel.CadastroFormViewModel
 import com.google.android.material.snackbar.Snackbar
 
@@ -99,7 +100,7 @@ class Cadastro : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (v.id == R.id.buttonCadastro) {
-            println("Teste")
+         //viewModel.save(  CadastroModel(1,"Elvis", "elvis@teste.com","123123"))
         }
     }
 }

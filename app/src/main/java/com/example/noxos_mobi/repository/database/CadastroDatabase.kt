@@ -6,9 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper
 
 
 class CadastroDatabase(
-    context: Context,
-    factory: SQLiteDatabase.CursorFactory,
-    version: Int
+    context: Context
 ) : SQLiteOpenHelper(context, NAME, null, VERSION) {
 
     companion object {
@@ -16,15 +14,13 @@ class CadastroDatabase(
         private const val VERSION = 1
     }
 
-    override fun onCreate(db: SQLiteDatabase?) {
-        if (db != null) {
+    override fun onCreate(db: SQLiteDatabase) {
 
             db.execSQL("create table user(" + " id integer primary key autoincrement, " + " name text, " + " email text, " + "password text );")
 
-        }
     }
 
-    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+    override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
     }
 
 
